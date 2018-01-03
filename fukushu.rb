@@ -19,6 +19,17 @@ def flash_card_question(set1, set2)
 	return false
 end
 
+def text_entry_question(set1, set2)
+	word_idx = rand(0..set1.length-1)
+	puts(set1[word_idx] + " -->")
+	user_answer = $stdin.gets.chomp
+
+	if user_answer == set2[word_idx] then
+		return true
+	end
+	return false
+end
+
 def do_test(set1, set2, reps, flash)
 	correct = 0
 	(0..reps-1).each do |q_id|
