@@ -10,12 +10,13 @@ def flash_card_question(set1, set2)
 	puts(words.map{ |x| (words.index(x)+1).to_s + ". " + x }.join("  "))
 	user_answer = $stdin.gets.chomp
 	begin
-		if user_answer.to_i+1 == answer then
+		if user_answer.to_i-1 == answer then
 			return true
 		end
 	rescue
 		# user entered something silly
 	end
+	puts(words[answer])
 	return false
 end
 
@@ -27,6 +28,7 @@ def text_entry_question(set1, set2)
 	if user_answer == set2[word_idx] then
 		return true
 	end
+	puts(set2[word_idx])
 	return false
 end
 
