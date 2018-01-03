@@ -85,10 +85,16 @@ def main()
 	end
 	# menu
 	type = ""
-	while ((1..2).map { |x| x.to_s } + ["q"]).include?(type) == false do
+	while ((1..8).map { |x| x.to_s } + ["q"]).include?(type) == false do
 		puts("Pick Practise Type")
 		puts("1: English -> Japanese (Multi Choice)")
 		puts("2: English -> Japanese (Text Entry)")
+		puts("3: Japanese -> English (Multi Choice)")
+		puts("4: Japanese -> English (Text Entry)")
+		puts("5: Japanese -> Phonetic (Multi Choice)")
+		puts("6: Japanese -> Phonetic  (Text Entry)")
+		puts("7: Phonetic -> Japanese (Multi Choice)")
+		puts("8: Phonetic -> Japanese (Text Entry)")
 		puts("q: Quit")
 		puts("\n")
 		type = $stdin.gets.chomp
@@ -109,6 +115,18 @@ def main()
 	if type == "1" or type == "2" then
 		set1 = vocab.map { |x| x['english'] }
 		set2 = vocab.map { |x| x['japanese'] }
+	end
+	if type == "3" or type == "4" then
+		set2 = vocab.map { |x| x['japanese'] }
+		set1 = vocab.map { |x| x['english'] }
+	end
+	if type == "5" or type == "6" then
+		set1 = vocab.map { |x| x['japanese'] }
+		set2 = vocab.map { |x| x['phonetic'] }
+	end
+	if type == "7" or type == "8" then
+		set2 = vocab.map { |x| x['phonetic'] }
+		set1 = vocab.map { |x| x['japanese'] }
 	end
 
 	if type.to_i % 2 == 0 then
