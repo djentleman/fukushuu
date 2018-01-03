@@ -83,7 +83,7 @@ def main()
 	end
 	# menu
 	type = ""
-	while ((1...2).map { |x| x.to_s } + ["q"]).include?(type) == false do
+	while ((1..2).map { |x| x.to_s } + ["q"]).include?(type) == false do
 		puts("Pick Practise Type")
 		puts("1: English -> Japanese (Multi Choice)")
 		puts("2: English -> Japanese (Text Entry)")
@@ -111,7 +111,7 @@ def main()
 
 	if type.to_i % 2 == 0 then
 		# text entry test
-		#do_test(set1, set2, reps, false)
+		do_test(set1, set2, reps, false)
 	else
 		do_test(set1, set2, reps, true)
 	end
