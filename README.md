@@ -25,7 +25,7 @@ The program comes with a load of JLPT vocab I parsed from the XML files [in this
 
 ### 使い方
 
-使い方は、このレポジトリをクローンして、引数として単語のファイルで、`fukushu.rb`というファイルを実行します。例えば：
+使いたければ、このレポジトリをクローンして、引数として単語のファイルで、`fukushu.rb`というファイルを実行します。例えば：
 
 `./fukushu.rb JLPT/N2.csv`
 
