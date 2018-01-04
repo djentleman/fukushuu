@@ -6,9 +6,16 @@
 
 ### How to use
 
-To use it, just clone the repo and run `fukushu.rb` with a vocab file as an argument - for example
+1. git clone 
+2. execute `fukushu.rb` with argument which is vocab file
 
-`./fukushu.rb JLPT/N2.csv`
+```
+# 1
+$ git clone https://github.com/djentleman/fukushuu.git
+
+# 2
+$ ./fukushu.rb JLPT/N2.csv
+```
 
 Its possible to build your own vocab files - they are just `.csv` files made up of 3 columns: `Japanese`, `Phonetic` and `English`. `Japanese` and `English` are fairly self explanitory - `Phonetic` is just the japanese word but in hiragana - for instance:
 
@@ -30,7 +37,7 @@ The program comes with a load of JLPT vocab I parsed from the XML files [in this
 
 ```
 # 1
-$ git clone https://github.com/tekun43/fukushuu.git
+$ git clone https://github.com/djentleman/fukushuu.git
 
 # 2
 $ ./fukushu.rb JLPT/N2.csv
