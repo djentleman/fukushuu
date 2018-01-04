@@ -25,11 +25,19 @@ The program comes with a load of JLPT vocab I parsed from the XML files [in this
 
 ### 使い方
 
-使いたければ、このレポジトリをクローンして、引数として単語のファイルを使って、`fukushu.rb`というファイルを実行して。例えば：
+1. クローン
+2. 引数として単語ファイルを指定し実行
 
-`./fukushu.rb JLPT/N2.csv`
+```
+# 1
+$ git clone https://github.com/tekun43/fukushuu.git
 
-単語のファイルはCSVだけ、だから自分の単語ファイルを作成できます！単語ファイルが三つの列があります。`日本語`,と`ひらがな`と`英語`。
+# 2
+$ ./fukushu.rb JLPT/N2.csv
+```
+
+単語のマスタファイルはcsvなので自由に単語ファイルを作成できます！  
+単語のマスタファイルには三つの列があります。`日本語`,と`ひらがな`と`英語`。
 例のファイル：
 
 
@@ -39,7 +47,7 @@ The program comes with a load of JLPT vocab I parsed from the XML files [in this
 パーティー,ぱーてぃー,Party
 ```
 
-日本語能力試験の単語ファイルはもうこのリポジトルにあります。[そこ]で見つけました！（ありがとうｗ）
+日本語能力試験の単語ファイルはもうこのリポジトリにあります。[ここ]で見つけました！（ありがとうｗ）
 
 [in this repo]: https://github.com/tfreedman/JLPT-Flashcards
 [そこ]: https://github.com/tfreedman/JLPT-Flashcards
