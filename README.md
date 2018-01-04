@@ -25,7 +25,7 @@ The program comes with a load of JLPT vocab I parsed from the XML files [in this
 
 ### 使い方
 
-1. クローン
+1. git clone 
 2. 引数として単語ファイルを指定し実行
 
 ```
@@ -47,8 +47,9 @@ $ ./fukushu.rb JLPT/N2.csv
 パーティー,ぱーてぃー,Party
 ```
 
-日本語能力試験の単語ファイルはもうこのリポジトリにあります。[ここ]で見つけました！（ありがとうｗ）
+日本語能力試験の単語ファイルは、[ここ]で見つけました！（ありがとうｗ）
 
 [in this repo]: https://github.com/tfreedman/JLPT-Flashcards
-[そこ]: https://github.com/tfreedman/JLPT-Flashcards
+[ここ]: https://github.com/tfreedman/JLPT-Flashcards
+
 
