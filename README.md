@@ -55,7 +55,7 @@ $ ./fukushu.rb JLPT/N2.csv
 パーティー,ぱーてぃー,Party
 ```
 
-日本語能力試験の単語ファイルは、[ここ]で見つけました！（ありがとうｗ）
+日本語能力試験の単語ファイルは、[ここ]で見つけました！（ありがとう :)）
 
 [in this repo]: https://github.com/tfreedman/JLPT-Flashcards
 [ここ]: https://github.com/tfreedman/JLPT-Flashcards
